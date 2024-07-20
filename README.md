@@ -63,7 +63,7 @@ Generated tables represent matrices. This should be normal because usually matri
 |3|4|
 |...|...|
 
-### Restrictons table
+### Cost function table
 |ColumnIndex|Coefficient|
 |---|---|
 |1|-1|
@@ -71,6 +71,12 @@ Generated tables represent matrices. This should be normal because usually matri
 |3|-1|
 |...|...|
 
-*Important note*: do not forget to create a user with strong password and enough privileges to modify data.
+*Important note*: do not forget to create a user with strong password and enough privileges to modify data. For example, in MySQL:
+
+```sql
+CREATE USER 'manager'@'localhost' IDENTIDIED BY 'Pa$$W0rD1';
+GRANT ALL PRIVILEGES ON EnterpriseOptimization.* TO 'Manager'@'localhost';
+...
+```
 
 Also, program has a slight support of localization with russian language as an example.
