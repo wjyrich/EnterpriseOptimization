@@ -74,7 +74,7 @@ Generated tables represent matrices. This should be normal because usually matri
 *Important note*: do not forget to create a user with strong password and enough privileges to modify data. For example, in MySQL:
 
 ```sql
-CREATE USER 'Manager'@'localhost' IDENTIDIED BY 'Pa$$W0rD1';
+CREATE USER 'Manager'@'localhost' IDENTIFIED BY 'Pa$$W0rD1';
 GRANT ALL PRIVILEGES ON EnterpriseOptimization.* TO 'Manager'@'localhost';
 ...
 ```
