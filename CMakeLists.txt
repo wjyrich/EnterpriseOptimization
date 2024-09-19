@@ -76,3 +76,13 @@ if (EXISTS "${CMAKE_BINARY_DIR}/locales/${QM_NAMES}")
 endif()
 add_custom_target(MOVE_QM_FILES ALL COMMAND ${CMAKE_COMMAND} -E rename ${QM_FILES} "${CMAKE_BINARY_DIR}/locales/${QM_NAMES}")
 add_dependencies(MOVE_QM_FILES EnterpriseOptimization)
+
+install(TARGETS EnterpriseOptimization
+             DESTINATION bin)
+
+install(FILES EnterpriseOptimization.png
+        DESTINATION share/icons)
+
+
+install(FILES EnterpriseOptimization.desktop
+            DESTINATION share/applications)
